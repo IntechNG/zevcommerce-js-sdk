@@ -67,3 +67,22 @@ export interface Order {
     paymentPublicKey?: string;
     orderAccessToken?: string;
 }
+
+export interface PageInfo {
+    hasNextPage: boolean;
+    endCursor: string | null;
+}
+
+export interface RelayConnection<T> {
+    edges: {
+        cursor: string;
+        node: T;
+    }[];
+    pageInfo: PageInfo;
+}
+
+export interface SessionInfo {
+    active: boolean;
+    customerId: string | null;
+    scopes: string[];
+}
