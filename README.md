@@ -1,6 +1,6 @@
 # ZevCommerce Storefront SDK
 
-The official JavaScript/TypeScript Headless SDK for integrating [ZevCommerce](https://zevop.com) into any frontend framework (Next.js, Vue, React Native, or generic Node.js). 
+The official JavaScript/TypeScript Headless SDK for integrating [ZevCommerce Headless API](https://zevcommerce.com) into any frontend framework (Next.js, Vue, React Native, or generic Node.js). 
 
 This zero-dependency SDK is built entirely on the native `fetch` API, providing a lightweight, perfectly typed developer experience.
 
@@ -24,7 +24,7 @@ Import and initialize the `ZevClient` with your store's endpoint and public key.
 import { ZevClient } from '@zevop/commerce-storefront';
 
 const client = new ZevClient({
-  endpoint: 'https://api.yourstore.com/graphql/v1',
+  endpoint: 'https://headless-api.zevcommerce.com/graphql/v1',
   publicKey: 'pk_live_...', // For browser applications
   // privateKey: 'sk_live_...', // Alternative for secure server-side apps
 });
